@@ -1,0 +1,251 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+  }
+body
+{
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+main
+{
+    width: 90%;
+    height: 150vh;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Left
+{
+    display: flex;
+}
+.Right
+{
+    display: flex;
+    justify-content: center;
+}
+img
+{
+    width: 100%;
+    height: 45vh;
+}
+nav
+{
+    display: flex;
+}
+li
+{
+    list-style-type: none;
+    padding: 7px;
+}
+a{
+    text-decoration: none;
+}
+ul
+{
+    display: flex;
+    align-items: center;
+    
+}
+form
+{
+    margin-left: 9px;
+}
+#menu
+{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(87, 74, 54);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#menu ul li a 
+{
+    color: whitesmoke;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 2px 2px 5px wheat;
+}
+input
+{
+    padding: 5px;
+    border-radius: 7px;
+}
+.Menu-Toggle
+{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.Bar
+{
+    height: 4px;
+    width: 25px;
+    background-color: #fff;
+    margin: 4px 0;
+    display: none;
+}
+a{
+    color: whitesmoke;
+}
+.Countainer
+{
+    width: 90%;
+    height: 150vh;
+    background-color: hsl(36, 100%, 90%);
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+}
+
+.Box-Box-Right
+{
+    width: 50%;
+    height: 110vh;
+    background-color: hsl(34, 57%, 70%);
+    margin-top: 5px;
+    border-radius: 7px;
+    box-sizing: border-box;
+    box-shadow: #fff;
+    box-shadow: 10px 10px 5px rgb(231, 219, 151);
+    display: flex;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 5px;
+    margin: 4px;
+}
+img
+{
+    border-radius: 15px;
+}
+.Box-Box-Left
+{
+    width: 50%;
+    height: 110vh;
+    background-color: burlywood;
+    margin-top: 5px;
+    border-radius: 7px;
+    box-sizing: border-box;
+    box-shadow: #fff;
+    box-shadow: 10px 10px 5px rgb(231, 219, 151);
+    color: whitesmoke;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration:underline;
+    text-shadow:2px 2px wheat;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px    ;
+}
+footer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 2px 2px 5px wheat;
+    font-size: 25px;
+    color: azure;
+    width: 100%;
+    height: 150px;
+    background-color:  rgb(87, 74, 54);
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px rgb(231, 219, 151);
+    margin-top: 5px;
+}
+.B{
+    width: 25%;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+    text-shadow:2px 2px 2px wheat;
+}
+.Nav-links
+{
+    display: flex;
+    flex-direction: row;    
+}
+@media(max-width:768px)
+{
+    .Bar
+    {
+        display:inline;
+    }
+    #menu
+    {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: start;
+    }
+    .Right
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Countainer
+    {
+        width: 80%;
+        flex-direction: column;
+        row-gap: 7px;
+        width: 100%;
+        align-items: center;
+    }
+    .Box-Box-Left
+    {
+        width: 100%;
+    }
+    .Box-Box-Right
+    {
+        width: 100%;
+    }
+    .Menu-Toggle
+    {
+        display: flex;
+    }
+    .Nav-links
+    {
+        display: none;
+        flex-direction: column;
+        width: 85%;
+        background-color: rgb(245, 197, 139);
+        
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        z-index: auto;
+
+    }
+    .Nav-links.active
+    {
+        display: block;
+    }
+    .B
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-indent: 10px;
+    }
+    footer
+    {
+        width: 100%;
+        height: 200px;
+    }
+}
